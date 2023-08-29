@@ -1,0 +1,71 @@
+.vh-50 {
+    height: 50vh;
+}
+
+
+.before::before {
+    content: "";
+    width: 5px;
+    height: 30px;
+    background-color: #4A90F3;
+    position: absolute;
+    left: -15px;
+    bottom: 2px;
+
+}
+
+
+.after::before {
+    content: "";
+    width: 4px;
+    height: 25px;
+    background-color: #4A90F3;
+    position: absolute;
+
+}
+
+
+.form {
+    position: relative;
+    left: -15px;
+}
+
+.recentPost ul {
+    list-style: none;
+    position: relative;
+    padding: 0;
+}
+
+.recentPost li::before {
+    content: "-";
+    color: #4A90F3;
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+    right: 5px;
+}
+
+.recentPost div {
+    position: relative;
+    left: -10px;
+}
+
+.col-md-8 h5::before {
+    content: "";
+    width: 4px;
+    height: 60px;
+    background-color: #4A90F3;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.reply h3:before{
+    content: "";
+    width: 100px;
+    height: 2.5px;
+    background-color: #4A90F3;
+    position: absolute;
+    left: 2;
+    bottom: -10px;
+}

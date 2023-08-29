@@ -1,0 +1,208 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.home {
+    background-image: url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.typingAnimation {
+    border-right: 3px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s infinite alternate-reverse steps(10),
+        cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 150px;
+    }
+
+    100% {
+        width: 150px;
+    }
+}
+
+zz .fs-sm {
+    font-size: 14px;
+}
+
+.opacity {
+    background-color: #00000080;
+    height: 100%;
+}
+
+.ulselect {
+    position: relative;
+    overflow: hidden;
+    margin: 0px 5px;
+}
+
+.underlinehover::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    left: -100%;
+    transition: all 0.5s;
+}
+
+.active.underlinehover::before{
+    left: 0;
+}
+
+.nav-item:hover .underlinehover::before {
+    left: 0;
+}
+
+.w-85 {
+    width: 100%;
+}
+
+.w-15 {
+    width: 15%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.w-5 {
+    width: 5%;
+}
+
+
+.bluedash {
+    width: 50px;
+    height: 3px;
+}
+
+.biggerbluedash {
+    height: 3px;
+    width: 100px;
+}
+
+.border-blue {
+    border: solid 10px #007BFF;
+    transition: all 1s;
+}
+
+.border-color {
+    border: solid 10px #CDE1F8;
+}
+
+#services i {
+    transition: all 0.5s;
+}
+
+.icons i {
+    color: black;
+}
+
+.parent:hover i {
+    background-color: #007BFF;
+}
+
+.parent:hover .border-blue {
+    border-color: #CDE1F8;
+}
+
+.icon:hover i {
+    background-color: #007BFF;
+    border-color: #CDE1F8;
+    color: white;
+}
+
+.bluebg {
+    background-image: url(../images/counters-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bluebg2 {
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.ts-sm {
+    font-size: 0.75rem;
+}
+
+.around {
+    bottom: 1rem;
+    right: 1rem;
+    color: #007BFF;
+}
+
+.portofolioItem:hover img {
+    scale: 1.3;
+}
+
+.portofolioImg {
+    overflow: hidden;
+}
+
+.portofolioItem img {
+    transition: all 1s;
+}
+
+.footer {
+    background-color: #0062D3;
+}
+
+.underline a::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: white;
+    bottom: -10px;
+    opacity: 0;
+    transition: all 0.75s;
+}
+
+.underline li:hover a::before,
+.underline li:focus a::before {
+    opacity: 1;
+}
+
+.anchor {
+    color: black;
+    transition: color 0.5s;
+}
+
+.anchor:hover {
+    color: #0062D3;
+}
